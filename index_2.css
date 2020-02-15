@@ -1,0 +1,40 @@
+body{
+    background-color:white;
+   
+}
+.btn{
+    cursor:pointer
+}
+h1{
+    color:black;
+    transition:color 0.5s ease in out;
+}
+.clicked{
+    color:blue;
+}
+/*=> 적용이 안된다.
+.js-weather{
+    color:red;
+    font-weight:bold;
+
+}
+*/
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.bgImage{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 20%;
+    Z-index: -1;
+    animation: fadeIn 0.5s linear;
+    
+}
